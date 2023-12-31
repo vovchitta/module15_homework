@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <style>
+body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .btn {
+            display: flex;
+            width: 300px;
+            height: 50px;
+            align-items: center;
+            justify-content: space-around;
+            cursor: pointer;
+            border: 1px solid green;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Показать ширину и высоту моего экрана</button>
+    <script>
+        const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', function () {
+            alert(`Ширина моего окна - ` + document.documentElement.clientWidth + `px` + ` ` + `А высота - ` + document.documentElement.clientHeight + `px`);
+        });
+    </script>
+</body>
+</html>
